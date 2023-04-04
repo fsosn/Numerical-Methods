@@ -1,0 +1,25 @@
+clear;
+[A,b] = mac_1;
+x_1 = gauss(A,b);
+[A,b] = mac_2;
+x_2 = gauss(A,b);
+[A,b] = mac_3(1);
+x_3 = gauss(A,b);
+
+fprintf('Metoda Gaussa z częściowym wyborem elementu podstawowego:\n');
+fprintf('-------------------------------------------------------------------------------------\n');
+fprintf('Wyniki dla danych mac_1:\n');
+fprintf('Wektor rozwiązań x: [');
+fprintf('%g, ', x_1(1:end-1));
+fprintf('%g]\n', x_1(end));
+fprintf('-------------------------------------------------------------------------------------\n');
+fprintf('Wyniki dla danych mac_2:\n');
+fprintf('Wektor rozwiązań x: [');
+fprintf('%g, ', x_2(1:end-1));
+fprintf('%g]\n', x_2(end));
+fprintf('-------------------------------------------------------------------------------------\n');
+fprintf('Wyniki dla danych mac_3:\n');
+fprintf('Wektor rozwiązań x: [');
+fprintf('%g, ', x_3(1:end-1));
+fprintf('%g]\n', x_3(end));
+fprintf('-------------------------------------------------------------------------------------\n');
