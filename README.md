@@ -6,3 +6,4 @@ All the task were done in MATLAB.
 1. Interpolation and approximation
 2. Solving linear equations using finite and iterative methods
 3. Numerical integration
+4. Solving non-linear equations using bisection and Newton-Raphson method
